@@ -1,12 +1,13 @@
 [package]
-name = "github_stie"
+name = "github_site"
 version = "0.1.0"
 edition = "2018"
 
 [dependencies]
-axum = { version ="*", features = ["headers"] }
+axum = { version ="0.7.5"}
 tokio ={ version = "*", features = ["full"]}
 oauth2 = "*"
 sqlx = { version = "*", features = ["postgres", "runtime-tokio-rustls"] }
 octocrab = "*"
 serde = { version = "*", features = ["derive"] }
+thiserror = "*"
