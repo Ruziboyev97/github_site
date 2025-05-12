@@ -1,0 +1,12 @@
+[package]
+name = "github_stie"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+axum = { version ="*", features = ["headers"] }
+tokio ={ version = "*", features = ["full"]}
+oauth2 = "*"
+sqlx = { version = "*", features = ["postgres", "runtime-tokio-rustls"] }
+octocrab = "*"
+serde = { version = "*", features = ["derive"] }
